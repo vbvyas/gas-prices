@@ -1,0 +1,22 @@
+{
+  "name": "gas-prices",
+  "version": "0.0.1",
+  "description": "Simple Hapi.js REST api to retrieve gas prices",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vbvyas/gas-prices.git"
+  },
+  "keywords": [
+    "gas"
+  ],
+  "author": "vbvyas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vbvyas/gas-prices/issues"
+  },
+  "homepage": "https://github.com/vbvyas/gas-prices"
+}
