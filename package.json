@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/vbvyas/gas-prices/issues"
   },
-  "homepage": "https://github.com/vbvyas/gas-prices"
+  "homepage": "https://github.com/vbvyas/gas-prices",
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "hapi": "^8.0.0",
+    "request": "^2.50.0",
+    "sugar": "^1.4.1",
+    "util": "^0.10.3"
+  }
 }
