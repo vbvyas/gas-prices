@@ -1,7 +1,11 @@
 var Hapi = require('hapi');
 var scraper = require('./lib/scraper.js');
 
-var server = new Hapi.Server(3000);
+var server = new Hapi.Server();
+server.connection({
+  host: 'localhost',
+  port: 3000
+});
 
 server.route({
   method: 'GET',
@@ -9,8 +13,9 @@ server.route({
   handler: function (req, res) {
     var state = req.params.state;
     var city = req.params.city;
-    var prices = scraper.scrape(state, city);
-    res(prices);
+    var prices = scraper.scrape(state, city, function (prices) {
+      res(prices);
+    });
   }
 });
 
