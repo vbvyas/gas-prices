@@ -22,7 +22,7 @@
   "dependencies": {
     "cheerio": "^0.18.0",
     "hapi": "^8.0.0",
-    "redis": "*",
+    "redis": "^0.12.1",
     "request": "^2.50.0",
     "sugar": "^1.4.1",
     "util": "^0.10.3"
