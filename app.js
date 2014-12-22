@@ -9,7 +9,7 @@ server.connection({
 
 server.route({
   method: 'GET',
-  path: 'v1/{state}/{city}',
+  path: '/v1/{state}/{city}',
   handler: function (req, res) {
     var state = req.params.state;
     var city = req.params.city;
