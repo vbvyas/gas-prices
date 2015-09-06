@@ -14,7 +14,7 @@ server.route({
     var state = req.params.state;
     var city = req.params.city;
 
-    if (typeof state == 'undefined' || typeof city == 'undefined' || state == null || city == null) {
+    if (!state || !city) {
       res({ message: "Error: null or empty state or city" });
     }
     
